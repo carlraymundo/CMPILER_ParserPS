@@ -1,0 +1,5 @@
+exp : t a
+a : ADD t a | epsilon
+t : f m
+m : MULT f m | epsilon
+f : LeftP exp RightP | LeftB exp RightB | INT
